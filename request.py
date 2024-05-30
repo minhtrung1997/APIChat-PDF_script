@@ -22,6 +22,21 @@ def upload_pdf(file_path, api_key):
     else:
         return None
     
+def upload_link(link, api_key):
+    headers = {
+    'x-api-key': api_key,
+    'Content-Type': 'application/json'
+    }
+    data = {'url': 'https://api.chatpdf.com/v1'}
+
+    response = requests.post(
+        link, headers=headers, json=data)
+
+    if response.status_code == 200:
+        return response.json()['sourceId']
+    else:
+        return None
+    
 def asking_question(source_id, question, api_key):
     headers = {
     'x-api-key': api_key,
@@ -56,20 +71,27 @@ def main():
     parser = argparse.ArgumentParser(description='Ask questions to a pdf file and save the responses to a file. If not the -f but the -s is provided, the script will ask the questions to the sourceId provided.')
     parser.add_argument('-f', '--file', type=str, help='Path to the pdf file')
     parser.add_argument('-s', '--sourceId', type=str, help='SourceId of the pdf file')
+    parser.add_argument('-l', '--link', type=str, help='Link to the pdf file')
     args = parser.parse_args()
+    # Exit if no file or sourceId or link is provided
+    if args.file is None and args.sourceId is None and args.link is None:
+        print('Please provide a file or sourceId or link')
+        return
     if args.sourceId:
         source_id = args.sourceId
-    else:
+    elif args.link:
+        source_id = upload_link(args.link, api_key)
+    elif args.file:
         source_id = upload_pdf(args.file, api_key)
     if source_id is None:
-        print('Error uploading the file or invalid sourceId. Please try again.')
+        print('Error uploading the file/link or invalid sourceId. Please try again.')
         return
     else :
-        print('File uploaded successfully or sourceId provided. You can start asking questions. Type "exit" to finish the script.')
+        print('File/link uploaded successfully or sourceId provided. You can start asking questions. Type "exit" to finish the script.')
         print('SourceId:', source_id)
         question = ''
         while question != 'exit':
-            question = input('Enter your question: ')
+            question = input('Enter your question: ').strip()
             if question != 'exit':
                 asking_question(source_id, question, api_key)
             else:
