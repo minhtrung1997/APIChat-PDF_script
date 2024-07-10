@@ -1,0 +1,22 @@
+Question: Citation the paper in APA
+Response: Jain, C., & M. (2018). High throughput ANI analysis of 90K prokaryotic genomes reveals clear species boundaries. Nature Communications, 9:5114.
+
+Question: Mô tả thuật toán của FastANI
+Response: FastANI là một thuật toán mới sử dụng Mashmap để tính toán giá trị ANI một cách nhanh chóng và chính xác. Thuật toán này bắt đầu bằng việc chia query genome thành các đoạn không chồng lấp có kích thước l. Các đoạn này sau đó được ánh xạ vào genome tham chiếu bằng cách sử dụng Mashmap. Kết quả được lưu trữ trong một tập hợp M chứa các bộ ba 〈f, i, p〉, trong đó f là id của đoạn, i là ước lượng đồng nhất, và p là vị trí bắt đầu mà f được ánh xạ vào B. Các bộ ba tương ứng với ánh xạ đồng nhất cao nhất cho mỗi đoạn query được trích xuất. Để xác định các ánh xạ đối xứng, mỗi bộ ba 〈f, i, p〉 trong M được phân loại dựa trên vị trí ánh xạ của nó trong genome tham chiếu. Cuối cùng, FastANI báo cáo giá trị trung bình của tất cả các bộ ba trong M reciprocal.
+
+Question: So sánh giữa Mash và FastANI
+Response: FastANI cung cấp độ chính xác gần như hoàn hảo với ANI b trên tất cả các tập dữ liệu D1-D5, trong khi Mash cải thiện kết quả với việc tăng kích thước sketch, đặc biệt là với D1. Tuy nhiên, ngay cả khi chạy với kích thước sketch lớn nhất là 100 K, kết quả của Mash vẫn phân kỳ so với giá trị ANI b trên các tập dữ liệu D1, D3 và D4. Trong khi đó, FastANI cung cấp cải thiện đáng kể về chất lượng so với Mash và có thể được sử dụng để phân biệt giữa các chủng vi khuẩn rất gần nhau như các chủng của các đợt bùng phát dịch bệnh khác nhau.
+
+Question: M reciprocal là gì ?
+Response: M reciprocal là tập hợp các kết quả tương ứng với việc lấy giá trị tương tự cao nhất cho mỗi fragment truy vấn và sau đó lọc ra các kết quả tương ứng với việc lấy giá trị tương tự cao nhất cho mỗi bin. Cuối cùng, FastANI báo cáo giá trị trung bình của tất cả các triplets trong M reciprocal.
+
+Question: Giải thích đơn giản hơn thuật toán của FastANI
+Response: FastANI là một thuật toán mới sử dụng Mashmap để tính toán ANI giữa các genome một cách nhanh chóng và chính xác. Nó giúp so sánh các genome prokaryotic với nhau để xác định mức độ giống nhau giữa chúng. Điểm mạnh của FastANI là khả năng xử lý nhanh chóng các tập dữ liệu lớn và cung cấp kết quả chính xác, giúp nhận biết ranh giới giữa các loài một cách rõ ràng.
+
+Question: Giải thích về mặt kỹ thuật sâu, nhưng dễ hiểu thuật toán của FastANI
+Response: FastANI là một thuật toán mới sử dụng Mashmap, một công cụ dựa trên MinHash để ánh xạ chuỗi không cần sắp xếp. Thuật toán này chủ yếu bao gồm hai giai đoạn chính: giai đoạn index và giai đoạn tính toán.
+
+Trong giai đoạn index, FastANI tạo ra các chỉ mục cho các chuỗi tham chiếu một lần duy nhất. Sau đó, trong giai đoạn tính toán, FastANI có thể tính toán các ước lượng ANI cho bất kỳ số lượng chuỗi truy vấn nào so với các chuỗi tham chiếu đã được chỉ mục. Điều này giúp tăng tốc quá trình tính toán ANI đáng kể.
+
+FastANI cũng có khả năng xử lý các tập dữ liệu lớn chứa hàng nghìn chuỗi gen trong vài giây. Thuật toán này cung cấp các giá trị ANI gần như giống với các giá trị ANI dựa trên sắp xếp cho cả các chuỗi gen hoàn chỉnh và chuỗi gen chưa hoàn chỉnh. Điều này giúp ước lượng chính xác các giá trị ANI cho các tập hợp lớn các chuỗi gen hoặc đánh giá tính mới mẻ của một chuỗi gen thảo luận bằng cách so sánh nó với toàn bộ bộ sưu tập các chuỗi gen prokaryotic có sẵn.
+

@@ -1,0 +1,15 @@
+Question: Citation of this paper in APA
+Response: I'm sorry, but the specific citation for this paper in APA format is not provided in the text. However, you can create an APA citation based on the authors' names (K. H. Schleifer and M. Kocur) and the title of the paper. If you need further assistance, please let me know.
+
+Question: Tựa đề của bài báo
+Response: Tựa đề của bài báo là "Classification of Staphylococci"
+
+Question: Người ta phân loại Staphylococcus aureus và các chủng Staphylococcus men coagulase âm thế nào ?
+Response: The classification of Staphylococcus aureus and coagulase-negative Staphylococcus strains is based on their cell wall peptidoglycans and teichoic acids. Staphylococcus aureus strains typically contain a cell wall peptidoglycan of the L-Lys-Glys type and ribitol teichoic acid. On the other hand, coagulase-negative Staphylococcus strains are divided into different groups based on their peptidoglycan type and teichoic acid composition. These groups help in distinguishing coagulase-negative Staphylococci from Staphylococcus aureus.
+
+Question: Chúng ta có thể sử dụng phép thử hóa sinh nào để  phân loại Staphylococcus aureus và các chủng Staphylococcus men coagulase âm ?
+Response: The information provided in the pages does not specifically mention a biochemical test for the classification of Staphylococcus aureus and coagulase-negative Staphylococci. However, based on general knowledge, Staphylococcus aureus is typically identified by its ability to produce coagulase enzyme, which causes blood plasma to clot. Coagulase-negative Staphylococci do not produce this enzyme. Other biochemical tests commonly used for identification include catalase test, mannitol fermentation test, and antibiotic susceptibility testing.
+
+Question: Tóm tắt phát hiện của bài báo này
+Response: Trong bài báo này, K. H. Schleifer và M. Kocur đã nghiên cứu về thành phần tường tế bào và các đặc điểm sinh hóa khác của staphylococci để giúp phân loại chúng.
+

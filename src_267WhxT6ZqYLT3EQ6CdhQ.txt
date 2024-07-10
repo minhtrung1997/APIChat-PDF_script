@@ -1,0 +1,6 @@
+Question: Do 23S, L3, L4 mutation relate to LZD resistance ?
+Response: Yes, mutations in the 23S rRNA, L3, and L4 genes have been associated with resistance to linezolid (LZD). Mutations in the 23S rRNA gene have been shown to confer resistance to LZD in a gene dose-dependent manner. Additionally, mutations in ribosomal protein L4 have been linked to reduced susceptibility to LZD in streptococci. Further studies are needed to conclusively link L4 mutations to the observed increase in LZD resistance in Staphylococcus aureus.
+
+Question: What about L3 protein ? Does L3 protein mutaion increase MIC of LZD in staph ?
+Response: Yes, mutations in the L3 protein have been associated with decreased susceptibility to oxazolidinones, including linezolid, in Staphylococcus aureus strains. Mutations in the L3 protein, such as Gly155Arg and Gly152Asp, have been shown to impact the MIC (Minimum Inhibitory Concentration) of linezolid in these strains. These mutations can lead to two- to fourfold changes in oxazolidinone MICs, contributing to resistance to linezolid.
+

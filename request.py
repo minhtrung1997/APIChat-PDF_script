@@ -20,6 +20,9 @@ def upload_pdf(file_path, api_key):
     if response.status_code == 200:
         return response.json()['sourceId']
     else:
+        # print the error message
+        print('Status:', response.status_code)
+        print('Error:', response.text)
         return None
     
 def upload_link(link, api_key):
@@ -27,14 +30,17 @@ def upload_link(link, api_key):
     'x-api-key': api_key,
     'Content-Type': 'application/json'
     }
-    data = {'url': 'https://api.chatpdf.com/v1'}
+    data = {'url': link}
 
     response = requests.post(
-        link, headers=headers, json=data)
+        'https://api.chatpdf.com/v1/sources/add-url', headers=headers, json=data)
 
     if response.status_code == 200:
         return response.json()['sourceId']
     else:
+        # print the error message
+        print('Status:', response.status_code)
+        print('Error:', response.text)
         return None
     
 def asking_question(source_id, question, api_key):
@@ -90,13 +96,17 @@ def main():
         print('File/link uploaded successfully or sourceId provided. You can start asking questions. Type "exit" to finish the script.')
         print('SourceId:', source_id)
         question = ''
-        while question != 'exit':
+        while True:
+    # Input the question from the user, fix the surplus enter \n
             question = input('Enter your question: ').strip()
-            if question != 'exit':
-                asking_question(source_id, question, api_key)
-            else:
+            while not question:
+                print("You didn't enter a question. Please try again.")
+                question = input('Enter your question: ').strip()
+            if question == 'exit':
                 print('Thank you for using the script')
                 return
+            else:
+                asking_question(source_id, question, api_key)
             
 if __name__ == '__main__':
     main()

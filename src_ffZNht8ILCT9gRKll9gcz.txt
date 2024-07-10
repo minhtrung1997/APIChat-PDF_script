@@ -1,0 +1,18 @@
+Question: Ciation of paper in APA
+Response: Hernández-Salmerón, M., & Moreno-Hagelsieb, G. (2022). Differentiation of Klebsiella species using FastANI, Mash, and Dashing. PeerJ, 13784.
+
+Question: Mô tả thuật toán của FastANI
+Response: FastANI sử dụng một thuật toán mapping không cần alignment (Mashmap) để xấp xỉ tính ANI trong khoảng 80-100% đồng nhất. Điều này giúp tăng tốc độ xử lý dữ liệu so với các phương pháp truyền thống.
+
+Question: Mô tả thuật toán của Mash
+Response: Mash sử dụng MinHash sketches, được tạo ra từ mẫu của các oligonucleotides nhỏ (thường dài 21 bp), và chuyển đổi thành các hash có thể được tính toán và so sánh một cách hiệu quả. Điều này giúp tăng tốc độ tính toán và so sánh các mẫu gen.
+
+Question: Mô tả thuật toán của Dash
+Response: Dashing sử dụng một thuật toán tính toán khoảng cách genomic nhanh và chính xác với HyperLogLog để tăng tốc độ và tạo ra kết quả tương tự như Mash.
+
+Question: So sánh giữa FastANI và Mash
+Response: The study found that FastANI and Mash produce almost identical results when differentiating Klebsiella species. Both methods are equally effective in species discrimination, with Area Under the Curve (AUC) values above 0.99.
+
+Question: So sánh giữa Dash với MAsh và FastANI
+Response: The study found that Dashing, Mash, and FastANI are equally effective in differentiating between Klebsiella species, with all three methods producing 15 species-level groups. Dashing and Mash had similar results, while FastANI provided additional pairwise assignments not found by the sketching programs.
+

@@ -1,0 +1,3 @@
+Question: Cite the paper in APA
+Response: Bozdogan, B., & Appelbaum, P. C. (2004). Protein synthesis in bacteria and the mode of action of oxazolidinones. International Journal of Antimicrobial Agents, 23(2004), 113-119.
+

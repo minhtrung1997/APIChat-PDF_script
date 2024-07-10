@@ -1,0 +1,12 @@
+Question: Title of the paper
+Response: The title of the paper is "Identification of Coagulase-Negative Staphylococci with the API STAPH-IDENT System."
+
+Question: Người ta phân loại Staphylococcus aureus và các chủng Staphylococcus men coagulase âm thế nào ?
+Response: Trong bài nghiên cứu về việc xác định các loài vi khuẩn Staphylococcus men coagulase âm, hệ thống API STAPH-IDENT đã được sử dụng để phân loại các loài vi khuẩn Staphylococcus men coagulase âm. Hệ thống này đã cho kết quả chính xác trong việc phân loại giữa các loài vi khuẩn Staphylococcus khác nhau, bao gồm cả Staphylococcus aureus và các chủng Staphylococcus men coagulase âm khác. Tuy nhiên, thông tin chi tiết về cách phân loại cụ thể của Staphylococcus aureus và các chủng Staphylococcus men coagulase âm không được cung cấp trong các trang thông tin đã được cung cấp.
+
+Question: hệ thống API STAPH-IDENT hoạt động thế nào ?
+Response: Hệ thống API STAPH-IDENT là một bộ thử nghiệm sinh hóa miniaturized sử dụng bốn chất chất cơ bản tổng hợp, urea, arginine, và bốn loại carbohydrate và chỉ cần một thời gian thử nghiệm 5 giờ. Sử dụng hệ thống API STAPH-IDENT một mình cho phép phân loại đúng hoặc một phần đúng 67% của các mẫu nghiên cứu. Tuy nhiên, nếu thực hiện một bài kiểm tra bổ sung (thường là độ nhạy với novobiocin), phân loại đúng thêm 25.7% mẫu, tổng cộng 92.7% mẫu được xác định đến cấp độ loài. Đây là một tiến bộ đáng kể trong lĩnh vực vi sinh lâm sàng.
+
+Question: kết quả API STAPH-IDENT giữa chủng có men coagulase âm và dương khác nhau thế nào ?
+Response: The API STAPH-IDENT system was able to achieve a high rate of correct identifications for coagulase-negative staphylococci (C-NS) species, with accuracy ranging from 71% to 100% for different species. Specifically, the system correctly identified Staphylococcus epidermidis at a rate of 94% and Staphylococcus saprophyticus at a rate of 98%. This indicates that the system is effective in distinguishing between different species of coagulase-negative staphylococci based on biochemical reactions and chromogenic substrates.
+

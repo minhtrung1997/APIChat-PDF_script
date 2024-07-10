@@ -1,0 +1,21 @@
+Question: Citation the paper in APA
+Response: Schwengers, O., Jelonek, L., Dieckmann, M. A., Beyvers, S., Blom, J., & Goesmann, A. (2021). Bakta: rapid and standardized annotation of bacterial genomes via alignment-free sequence identification. Microbial Genomics, 7, 000685.
+
+Question: Công cụ bakta có ưu điểm gì ?
+Response: Công cụ Bakta có nhiều ưu điểm, bao gồm:
+1. Cung cấp một quy trình chú thích toàn diện cho gen mã hóa và không mã hóa trong vi khuẩn.
+2. Tăng tốc quá trình chú thích CDS thông qua phương pháp xác định chuỗi không cần sắp xếp, giảm số lượng so sánh chuỗi đòi hỏi tính toán cao.
+3. Phát hiện và chú thích các protein nhỏ không được dự đoán bởi các công cụ dự đoán gene de novo hiện đại.
+4. Xác định chính xác các chuỗi protein công khai đã biết và gán các bộ nhận dạng cơ sở dữ liệu ổn định từ RefSeq và UniProt.
+5. Tận dụng dữ liệu siêu dữ liệu để cải thiện dự đoán cấu trúc của CDS.
+6. Cung cấp chú thích tương đương hoặc chi tiết hơn về CDS với các danh mục chức năng, chẳng hạn như các danh mục COG, số EC và các thuật ngữ GO.
+
+Question: Các CSDL BAkta tham chiếu ?
+Response: Bakta sử dụng các cơ sở dữ liệu như RefSeq và UniProt để xác định chuỗi protein công khai và gán các mã số ổn định.
+
+Question: Bakta có chú giải được gen kháng kháng sinh và gen gây độc không?
+Response: Bakta có khả năng dự đoán và chú giải gen kháng kháng sinh và gen gây độc không.
+
+Question: Ý bạn là sao ?
+Response: Tôi là trợ lý ảo, được tạo ra để giúp bạn truy cập thông tin từ các trang trong tệp PDF mà bạn cung cấp. Bạn có thắc mắc gì cần trợ giúp không?
+
